@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color:gold;
+    font-family: 'Philosopher', sans-serif;
+}
+
+#container {
+    width: 90%;
+    background-color: purple;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+h1 {
+    float: left;
+        padding-left: 1em;
+}
+
+#search {
+    float: left;
+    padding: 1.6em;
+}
+
+#search input {
+    padding: 0.5em;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#navigation {
+    background-color: rgb(253, 253, 251);
+}
+
+#navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+#navigation li {
+    float: left;
+    padding: 10px 30px;
+    border-right: 2px solid gold;
+}
+
+#navigation li:hover {
+    background-color: purple;
+    cursor: pointer;
+}
