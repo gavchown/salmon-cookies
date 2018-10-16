@@ -8,6 +8,18 @@
     <link href="normalize.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Philosopher" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+
+<script id="product-template" type="text/handlebars-v4">
+    <li class="product" data-brand="{{brand}}" data-categories="{{categories}}" data-id="{{product_id}}">
+        <img src="images/{{image}}"alt="{{title}}">
+        <h4>{{title}}</h4>
+        <p>{{price}}</p>
+        <a href="#" class="button">Learn More</a>
+    </li>
+</script>
+
+
+
 </head>
 <body>
    <div id="container">
@@ -29,11 +41,57 @@
                 </ul>
 
             </div>
-            <div id="promotions">
-
+            <div id="promotions" class="clearfix">
+                <span class="arrow">&lt;</span>
+                <span class="promo">Free Shipping on orders $50 and above using promo code BRON23</span>
+                <span class="arrow">&gt;</span>
             </div>
         </header>
-   </div> 
+        <main>
+            <aside>
+                <h3>Categories</h3>
+                <select id="category-filter">
+                    <option value="">--Filter by Category--</option>
+                </select>
+                <hr>
+                <h3>Brands</h3>
+                <select id="brand-filter">
+                    <option value="">--Filter By Brand </option>
+                </select>
+                <hr>
+                <h3>Materials</h3>
+                <select id="material-filter">
+                    <option value="">--Filter By Material </option>
+                </select>
+                <hr>
+                <h3>Colors</h3>
+                <select id="color-filter">
+                    <option value="">--Filter By Color </option>
+                </select>
+                <hr>
+                <h3>Sizes</h3>
+                <select id="size-filter">
+                    <option value="">--Filter By Size </option>
+                </select>
+                
 
+            </aside>
+            <section>
+                <h3>Top Products</h3>
+                <ul id="product-listings">
+                    
+                </ul>   
+            </section>
+        </main>
+        <footer>
+            <p>Copyright &copy; 2018 - LBJ Superstore</p>
+        </footer>
+   </div>
+   <script src="js/jquery-3.3.1.min.js"></script>
+   <script src="js/handlebars-v4.0.12.js"></script> 
+   <script src="js/products.js"></script>
+   <script src="js/products-constructor.js"></script>
+   <script src="js/brand-filters.js"></script>
+   <script src="js/category-filters.js"></script>
 </body>
 </html>

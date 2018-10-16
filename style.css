@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color:gold;
+    background-color: gold;
     font-family: 'Philosopher', sans-serif;
 }
 
@@ -15,11 +15,13 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Permanent Marker', cursive;
+    margin: 0;
 }
 
 h1 {
     float: left;
         padding-left: 1em;
+        padding-top: 0.7em;
 }
 
 #search {
@@ -49,9 +51,103 @@ h1 {
     float: left;
     padding: 10px 30px;
     border-right: 2px solid gold;
+    text-align: center;
 }
 
 #navigation li:hover {
     background-color: purple;
     cursor: pointer;
+    
+}
+
+#promotions {
+    background-color: gold;
+}
+
+#promotions span {
+    float: left;
+    text-align: center;
+    padding: 0.5em;
+    font-weight: bold;
+   
+}
+
+#promotions .arrow {
+    width: 5%;
+    background-color: white;
+    font-size: 2em;
+    padding: 0;
+
+}
+
+.promo {
+    width: 90%;
+}
+
+main {
+    width: 100%;
+    min-height: 350px;
+    background-color: gold;
+}
+
+main > aside {
+    float: left;
+    width: 20%;
+    height: 100%;
+    display: block;
+    background-color: gold;
+}
+
+main > section {
+    width: 80%;
+    float: left;
+    padding: 20px;
+    background-color: purple;
+    color:white;
+}
+
+aside select {
+    width: 100%
+}
+
+aside hr {
+    border: none;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+#product-listings {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.product {
+    width: 30%;
+    background-color: black;
+    color: white;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.product img {
+    width: 87%;
+    margin: 20px auto;
+    display: block;
+}
+
+.product h4, .product p, .product a {
+    margin: 0;
+    text-align: center;
+    display: block;
+}
+
+footer {
+    background-color: white;
+    text-align: center;
+}
+
+footer p {
+   padding: 10px;
+   margin: 0;
 }
